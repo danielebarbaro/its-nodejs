@@ -40,3 +40,12 @@ In *Unix/Windows*: serve per mostrare il contenuto del file specificato.
 
 ### Unix: `chmod` - Windows: `assign`:
 In *Unix/Windows*: serve per modificare i permessi di un file e/o directory.
+
+
+#### Fonti:
+
+Riferimento doc ufficiale Windows:
+- [Alias per la compatibilità](https://docs.microsoft.com/it-it/powershell/scripting/learn/compatibility-aliases?view=powershell-7.2)
+
+Helper comandi:
+- [Windows Command Prompt](https://skimfeed.com/blog/windows-command-prompt-ls-equivalent-dir/)
