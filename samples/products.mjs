@@ -12,11 +12,15 @@ const products = [
 ];
 
 async function getProduct(id) {
-    return products.filter(item => item.id === id).shift();
+    const product = products.filter(item => item.id === id).shift();
+    // console.log('Product Price async: ', product?.price)
+    return product;
 }
 
 function getProductSync(id) {
-    return products.find(item => item.id === id);
+    const product = products.find(item => item.id === id);
+    // console.log('Product Price sync: ', product?.price)
+    return product;
 }
 
 export {products, getProduct, getProductSync};

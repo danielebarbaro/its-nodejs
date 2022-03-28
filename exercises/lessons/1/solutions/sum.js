@@ -1,4 +1,4 @@
-/** Sommare i numeri tra il range `min` and `max` compresi gli etremi */
+/** Sommare i numeri tra il range `min` and `max` compresi gli estremi */
 
 let range = function (min, max) {
     let result = [];
