@@ -5,7 +5,7 @@ Questo doc aggiunge qualche informazione in più al già completo ed esaustivo [
 ### Unix: `pwd` - Windows: `cd`:
 *Unix/Windows*: serve per mostrare la directory in cui ci si trova.
 
-### Unix: `ls` - Windows: `cd`:
+### Unix: `ls` - Windows: `cd` o `dir`:
 In *Unix*: serve per listare il contenuto di una directory.
 In *Windows*: serve per mostrare la directory in cui ci si trova.
 
