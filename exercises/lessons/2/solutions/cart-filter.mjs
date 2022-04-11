@@ -1,26 +1,30 @@
+/*
+ * Creare un carrello che contenga solo prodotti di tipo pocket-book
+ * [
+ *      {name: 'firenze', ean: '812302', price: 9.99, type: 'pocket-book' },
+ *      {name: 'roma', ean: '912302', price: 9.99, type: 'pocket-book' }
+ * ]
+*/
+
+// Importo tutti i prodotti
 import {products} from "./dataset.mjs";
 
-let cart = [];
-console.log('Products', products);
+// stampo in console i prodotti
+// console.log('Products', products);
 
-// Creare un carrello che contenga solo pocket-book
-
-for (let item of products) {
-    if (item.type === 'pocket-book') {
-        cart.push(item);
+// Soluzione con funzione dichiarativa e ciclo for - function declaration
+function filterCart(products, type) {
+    let cart = [];
+    for (let item of products) {
+        if (item.type === type) {
+            cart.push(item);
+        }
     }
+    return cart;
 }
+console.log('Il carrello filtrato con filterCart() é : ', filterCart(products, 'pocket-book'), '\n');
 
-console.log('Cart: ', cart);
-
-// Creare un carrello che contenga solo pocket-book usando la `.filter()`
-
-const cartFilter = products.filter(item => item.type === 'pocket-book');
-console.log('Cart: ', cartFilter);
-
-/*
-[
-  { name: 'firenze', ean: '812302', price: 9.99, type: 'pocket-book' },
-  { name: 'roma', ean: '912302', price: 9.99, type: 'pocket-book' }
-]
-*/
+// Soluzione alternativa con Anonymous function + filter
+// FILTER: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+const filter = (products, type) => products.filter(item => item.type === type);
+console.log('Il carrello filtrato con filter() é : ', filter(products, 'pocket-book'), '\n');
