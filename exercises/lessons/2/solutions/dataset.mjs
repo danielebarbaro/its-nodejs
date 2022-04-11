@@ -37,5 +37,5 @@ const products = [
     },
 ];
 
-
+// esporto l'oggetto prodotti
 export { products };

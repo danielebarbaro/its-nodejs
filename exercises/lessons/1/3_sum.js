@@ -1,4 +1,12 @@
-/** Sommare i numeri tra il range `min` and `max` compresi gli etremi */
+/**
+ *
+ * Sommare i numeri compresi tra il range `min` e `max` compresi gli estremi
+ * Es:
+ *      const result = sum(3,7)
+ *      console.log('La somma del range è:', result);
+ *
+ *
+ * */
 
 let range = function (min, max) {
 

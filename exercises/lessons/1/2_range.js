@@ -1,4 +1,11 @@
-/** Stampare il range `min` and `max` */
+/**
+ *
+ * Stampare il range di numeri compresi tra `min` e `max`
+ * Es:
+ *      const result = range(3,7)
+ *      console.log('Il range tra 3 e 7 è:', result);
+ *
+ * */
 
 let range = function (min, max) {
 
